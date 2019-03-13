@@ -1,0 +1,21 @@
+;******************************************************************************
+;*
+;*                      Physical Device Driver MPU401
+;*                 Copyright (c) Herbert Mehlhose   1993
+;*
+;******************************************************************************
+LIBRARY
+CODE    PRELOAD
+DATA    PRELOAD
+SEGMENTS
+   DSEG    CLASS 'DATA'
+   CSEG    CLASS 'CODE'
+
+;
+;pdd uses no stack but the STACKSIZE Definition
+;keeps the linker from complaining
+;
+;STACKSIZE   2048  von 2048 testweise hochgesetzt auf 8k, test ob
+; treiber von 4710 byte seine gr”áe ver„ndert.
+STACKSIZE   8192
+
