@@ -1,0 +1,84 @@
+#define  INCL_MENU    
+#define  INCL_WINDIALOGS
+#include <os2.h>
+#include "midiseq.h"                /* Standard Include file fÅr Projekt     */
+#include "mididlg.h"                /* Allg. INCLUDE File fÅr ALLE Dialoge   */
+
+/* Einbindung der Dialog-Ressourcen fÅr die diversen Dialogfenster           */
+rcinclude mididlgm.dlg              /* Main Dialog-Window                    */
+rcinclude mididlgv.dlg              /* Request Version Dialog Window         */
+/*rcinclude midimap.dlg                Midi Mapper Dialog-Window             */
+
+/* Referenzierung des Symbols                                                */
+ICON ID_FRAME_A  PRELOAD midiseq.ico
+
+/* Bitmap definitions for LEVEL display                                      */
+BITMAP ID_BMP_LEV0   PRELOAD level0.bmp
+BITMAP ID_BMP_LEV1   PRELOAD level1.bmp
+BITMAP ID_BMP_LEV2   PRELOAD level2.bmp
+BITMAP ID_BMP_LEV3   PRELOAD level3.bmp
+BITMAP ID_BMP_LEV4   PRELOAD level4.bmp
+BITMAP ID_BMP_LEV5   PRELOAD level5.bmp
+BITMAP ID_BMP_LEV6   PRELOAD level6.bmp
+BITMAP ID_BMP_LEV7   PRELOAD level7.bmp
+BITMAP ID_BMP_LEV8   PRELOAD level8.bmp
+BITMAP ID_BMP_LEV9   PRELOAD level9.bmp
+BITMAP ID_BMP_LEV10  PRELOAD level10.bmp
+BITMAP ID_BMP_LEV11  PRELOAD level11.bmp
+BITMAP ID_BMP_LEV12  PRELOAD level12.bmp
+BITMAP ID_BMP_LEV13  PRELOAD level13.bmp
+BITMAP ID_BMP_LEV14  PRELOAD level14.bmp
+BITMAP ID_BMP_LEV15  PRELOAD level15.bmp
+BITMAP ID_BMP_LEV16  PRELOAD level16.bmp
+
+/* Definition of menue structure for mainwindow                              */
+
+MENU ID_FRAME_A LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    SUBMENU         "~Datei",           MID_FILE
+      BEGIN
+        MENUITEM    "~Neu...",          MID_NEW
+        MENUITEM    "~ôffnen...",       MID_OPEN
+        MENUITEM    "~Speichern...",    MID_SAVE,, MIA_DISABLED
+        MENUITEM    "~Speichern als...",MID_SAVEAS,, MIA_DISABLED
+        MENUITEM    SEPARATOR
+        MENUITEM    "~Ende\t<F3>",      MID_EXIT
+      END
+
+    SUBMENU         "~Funktionen",      MID_FUNCS
+      BEGIN
+        MENUITEM    "~Version...",      MID_GETVER
+        MENUITEM    "~Metronom...",     MID_METRONOME,, MIA_DISABLED
+        MENUITEM    "~REC/PLAY...",     MID_RECPLAY
+      END
+
+    SUBMENU      "Hilfe",               MID_HELP,, MIA_DISABLED 
+      BEGIN
+        MENUITEM "Wie erhÑlt man Hilfe...", MID_HELPHELP
+        MENUITEM "Erweiterte Hilfe...",     SC_HELPEXTENDED, MIS_SYSCOMMAND
+        MENUITEM "Hilfetext fÅr Tasten...", SC_HELPKEYS,     MIS_SYSCOMMAND
+        MENUITEM "Hilfe Index...",          SC_HELPINDEX,    MIS_SYSCOMMAND
+      END
+END
+
+/* Definition of POPUP menue resource for Tracklist Item selection           */
+MENU ID_POPUP_TRK LOADONCALL MOVEABLE DISCARDABLE                  
+BEGIN                                                      
+   MENUITEM    "Mischpult",          MID_TL_MIXER,,
+   MENUITEM    "Noteneditor",        MID_TL_NOTE,, MIA_DISABLED
+   MENUITEM    "Piano Roll",         MID_TL_PIANO,, MIA_DISABLED
+   MENUITEM    "Event Liste",        MID_TL_EVENTLIST,,
+END                                                        
+
+/* Definition of accelerator tanîe                                           */
+ACCELTABLE ID_FRAME_A
+BEGIN
+  VK_F3,  MID_EXIT,         VIRTUALKEY
+END
+
+/* Definition der Text-Tabelle                                               */
+STRINGTABLE
+BEGIN
+SID_QUERYEXIT, "Wollen Sie die Anwendung wirklich verlassen?"
+END
+

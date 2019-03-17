@@ -1,0 +1,104 @@
+DLGINCLUDE 1 "MIDIDLG.H"
+
+DLGTEMPLATE ID_DLG_VERSION LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Anzeige MPU und Treiber Version", ID_DLG_VERSION, 12, 6, 162, 
+            112, WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        PUSHBUTTON      "O.K.", DID_RV_OK, 15, 6, 133, 14
+        GROUPBOX        "MPU-Karte", -1, 13, 69, 137, 38
+        GROUPBOX        "MPU-Treiber", -1, 13, 28, 137, 37
+        LTEXT           "Version:", -1, 23, 89, 35, 8
+        LTEXT           "Release:", -1, 23, 77, 45, 8
+        LTEXT           "Version:", -1, 23, 46, 43, 8
+        LTEXT           "Release:", -1, 23, 35, 37, 8
+        LTEXT           "", DID_RV_MPUVERS, 70, 89, 20, 8
+        LTEXT           "", DID_RV_MPUREV, 70, 77, 20, 8
+        LTEXT           "", DID_RV_DRVVERS, 70, 46, 20, 8
+        LTEXT           "", DID_RV_DRVREV, 70, 35, 20, 8
+    END
+END
+
+DLGTEMPLATE ID_DLG_MAIN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Hauptdialog (PLAY/REC)", ID_DLG_MAIN, -4, -53, 337, 183, 
+            WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        PUSHBUTTON      "PLAY", DID_MD_PLAY, 6, 155, 40, 10
+        PUSHBUTTON      "REcord", DID_MD_RECORD, 6, 145, 40, 10
+        PUSHBUTTON      "Stop", DID_MD_STOP, 6, 135, 40, 10
+        LTEXT           "Dies ist der Hauptdialog zur Aufnahme und Wiedergab"
+                        "e von MIDI Daten", -1, 21, 173, 302, 8
+        LTEXT           "Start  Playback", -1, 53, 155, 68, 9
+        LTEXT           "Start Aufnahme", -1, 53, 144, 70, 9
+        LTEXT           "S T O P", -1, 53, 134, 34, 9
+        LISTBOX         DID_MD_LISTBOX, 137, 125, 192, 46
+        LTEXT           "MIDI Bytes aus Aufnahmefunktion", -1, 136, 114, 160, 
+                        8
+        PUSHBUTTON      "CLEAR", DID_MD_CLEARLIST, 283, 113, 47, 11
+        AUTOCHECKBOX    "", DID_MD_ACT1, 38, 86, 11, 11
+        AUTOCHECKBOX    "", DID_MD_ACT2, 38, 75, 11, 11
+        AUTOCHECKBOX    "", DID_MD_ACT3, 38, 64, 11, 11
+        AUTOCHECKBOX    "", DID_MD_ACT4, 38, 53, 11, 11
+        AUTOCHECKBOX    "", DID_MD_ACT5, 38, 42, 11, 11
+        AUTOCHECKBOX    "", DID_MD_ACT6, 38, 31, 11, 11
+        LTEXT           "1", -1, 10, 84, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "2", -1, 10, 73, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "3", -1, 10, 62, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "4", -1, 10, 51, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "5", -1, 10, 40, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "6", -1, 10, 29, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "7", -1, 10, 18, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        LTEXT           "8", -1, 10, 7, 11, 11
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+        AUTOCHECKBOX    "", DID_MD_ACT7, 38, 20, 11, 11
+        AUTOCHECKBOX    "", DID_MD_ACT8, 38, 9, 11, 11
+        LTEXT           "Track", -1, 3, 97, 25, 11
+        LTEXT           "active", -1, 30, 97, 26, 11
+                        PRESPARAMS PP_FONTNAMESIZE, "5.courier"
+        LTEXT           "0", DID_MD_SIZE1, 75, 84, 32, 11
+        LTEXT           "0", DID_MD_SIZE2, 75, 73, 32, 11
+        LTEXT           "0", DID_MD_SIZE3, 75, 62, 32, 11
+        LTEXT           "0", DID_MD_SIZE4, 75, 51, 32, 11
+        LTEXT           "0", DID_MD_SIZE5, 75, 40, 32, 11
+        LTEXT           "0", DID_MD_SIZE6, 75, 29, 32, 11
+        LTEXT           "0", DID_MD_SIZE7, 75, 18, 32, 11
+        LTEXT           "0", DID_MD_SIZE8, 75, 7, 32, 11
+        LTEXT           "size", -1, 69, 97, 17, 11
+        LTEXT           "0", -1, 129, 84, 18, 11
+        LTEXT           "0", -1, 129, 73, 18, 11
+        LTEXT           "0", -1, 129, 62, 18, 11
+        LTEXT           "0", -1, 129, 51, 18, 11
+        LTEXT           "0", -1, 129, 40, 18, 11
+        LTEXT           "0", -1, 129, 29, 18, 11
+        LTEXT           "0", -1, 129, 18, 18, 11
+        LTEXT           "0", -1, 129, 7, 18, 11
+        LTEXT           "MIDI-Channel", -1, 106, 97, 54, 11
+        AUTORADIOBUTTON "", DID_MD_RAD1, 184, 86, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD2, 184, 75, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD3, 184, 64, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD4, 184, 53, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD5, 184, 42, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD6, 184, 31, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD7, 184, 20, 11, 11, WS_TABSTOP
+        AUTORADIOBUTTON "", DID_MD_RAD8, 184, 9, 11, 11, WS_TABSTOP
+        LTEXT           "Action", -1, 175, 97, 54, 11
+        PUSHBUTTON      "Store", DID_MD_STORE, 211, 74, 40, 14
+        PUSHBUTTON      "Delete", DID_MD_DELETE, 211, 54, 40, 14
+        LTEXT           "Spur speichern", -1, 253, 71, 68, 14
+        LTEXT           "Spur l”schen", -1, 253, 51, 68, 14
+        PUSHBUTTON      "Overdub", DID_MD_OVERDUB, 6, 125, 40, 10
+        LTEXT           "Start Overdub", -1, 53, 124, 68, 9
+        AUTOCHECKBOX    "ON 50h", DID_MD_TST1, 212, 40, 55, 10
+        AUTOCHECKBOX    "OFF 50h", DID_MD_TST2, 212, 30, 55, 10
+        AUTOCHECKBOX    "TST3", DID_MD_TST3, 212, 20, 55, 10
+        AUTOCHECKBOX    "TST4", DID_MD_TST4, 212, 10, 55, 10
+    END
+END

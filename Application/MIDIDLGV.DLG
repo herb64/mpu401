@@ -1,0 +1,19 @@
+DLGTEMPLATE ID_DLG_VERSION LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Anzeige MPU und Treiber Version", ID_DLG_VERSION, 12, 6, 162, 
+            112, WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        PUSHBUTTON      "O.K.", DID_RV_OK, 15, 6, 133, 14
+        GROUPBOX        "MPU-Karte", -1, 13, 69, 137, 38
+        GROUPBOX        "MPU-Treiber", -1, 13, 28, 137, 37
+        LTEXT           "Version:", -1, 23, 89, 35, 8
+        LTEXT           "Release:", -1, 23, 77, 45, 8
+        LTEXT           "Version:", -1, 23, 46, 43, 8
+        LTEXT           "Release:", -1, 23, 35, 37, 8
+        LTEXT           "", DID_RV_MPUVERS, 70, 89, 20, 8
+        LTEXT           "", DID_RV_MPUREV, 70, 77, 20, 8
+        LTEXT           "", DID_RV_DRVVERS, 70, 46, 20, 8
+        LTEXT           "", DID_RV_DRVREV, 70, 35, 20, 8
+    END
+END
+

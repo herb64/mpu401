@@ -1,0 +1,126 @@
+# IBM Developer's Workframe/2 Make File Creation run at 17:27:35 on 01/13/95
+
+# Make File Creation run in directory:
+#   F:\MIDISEQ;
+
+# Assumed INCLUDE environment variable path:
+#   C:\MUGLIB;
+#   E:\SQLLIB;
+#   E:\TOOLKT21\C\OS2H;
+#   E:\TOOLKT21\C\OS2H\VDD;
+#   E:\TOOLKT21\ASM\OS2INC;
+#   E:\IBMC\INCLUDE;
+
+
+MIDISEQ.RES:  MIDISEQ.RC  \
+#  {.;$(INCLUDE)}OS2.H  \
+   {.;$(INCLUDE)}MIDISEQ.H  \
+   {.;$(INCLUDE)}MIDIDLG.H  \
+   MIDIDLGM.DLG  \
+     MIDIDLG.H  \
+   MIDIDLGV.DLG  \
+   MIDISEQ.ICO  \
+   LEVEL0.BMP  \
+   LEVEL1.BMP  \
+   LEVEL2.BMP  \
+   LEVEL3.BMP  \
+   LEVEL4.BMP  \
+   LEVEL5.BMP  \
+   LEVEL6.BMP  \
+   LEVEL7.BMP  \
+   LEVEL8.BMP  \
+   LEVEL9.BMP  \
+   LEVEL10.BMP  \
+   LEVEL11.BMP  \
+   LEVEL12.BMP  \
+   LEVEL13.BMP  \
+   LEVEL14.BMP  \
+   LEVEL15.BMP  \
+   LEVEL16.BMP  \
+   MAKEFILE
+
+MIDICNT1.OBJ:  MIDICNT1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   {.;$(INCLUDE);}midicnt.h  \
+   MAKEFILE
+
+MIDIDLG1.OBJ:  MIDIDLG1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDIFIL1.OBJ:  MIDIFIL1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDIHLP1.OBJ:  MIDIHLP1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}conio.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+#  {$(INCLUDE);}bsememf.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDIHLP2.OBJ:  MIDIHLP2.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDILOG1.OBJ:  MIDILOG1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDIMIX1.OBJ:  MIDIMIX1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDIMPU1.OBJ:  MIDIMPU1.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}conio.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}bsememf.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   MAKEFILE
+
+MIDISEQ.OBJ:  MIDISEQ.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}midiseq.h  \
+   {.;$(INCLUDE);}mididlg.h  \
+   {.;$(INCLUDE);}midicnt.h  \
+   MAKEFILE

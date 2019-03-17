@@ -1,0 +1,50 @@
+# IBM Developer's Workframe/2 Make File Creation run at 17:27:35 on 01/13/95
+
+# Make File Creation run in directory:
+#   F:\MIDISEQ;
+
+.SUFFIXES:
+
+.SUFFIXES: .c .rc
+
+ALL: MIDISEQ.EXE \
+     MIDISEQ.RES
+
+midiseq.exe:  \
+  MIDICNT1.OBJ \
+  MIDIDLG1.OBJ \
+  MIDIFIL1.OBJ \
+  MIDIHLP1.OBJ \
+  MIDIHLP2.OBJ \
+  MIDILOG1.OBJ \
+  MIDIMIX1.OBJ \
+  MIDIMPU1.OBJ \
+  MIDISEQ.OBJ \
+  MIDISEQ.RES \
+  MAKEFILE
+   @REM @<<MIDISEQ.@0
+     /CO /NOI /ST:32768 /PM:PM +
+     MIDICNT1.OBJ +
+     MIDIDLG1.OBJ +
+     MIDIFIL1.OBJ +
+     MIDIHLP1.OBJ +
+     MIDIHLP2.OBJ +
+     MIDILOG1.OBJ +
+     MIDIMIX1.OBJ +
+     MIDIMPU1.OBJ +
+     MIDISEQ.OBJ
+     midiseq.exe
+     
+     
+     ;
+<<
+   LINK386.EXE @MIDISEQ.@0
+   RC MIDISEQ.RES midiseq.exe
+
+{.}.rc.res:
+   RC -r .\$*.RC
+
+{.}.c.obj:
+   ICC.EXE /Sp1 /Ss /Q /Ti /W1 /Gm /C .\$*.c
+
+!include MAKEFILE.DEP

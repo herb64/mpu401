@@ -1,0 +1,200 @@
+
+DLGTEMPLATE -1 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Herbies MIDI Sequencer fÅr OS/2", -1, 1, -54, 328, 192, 
+            WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        CONTROL         "", 0, 8, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_OK, 28, 10, 10, 94, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | SLS_HOMETOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_CANCEL, 48, 10, 10, 94, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | SLS_HOMETOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 3, 68, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 4, 88, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 5, 108, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 6, 128, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 7, 148, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 8, 168, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 9, 188, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 10, 208, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 11, 228, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 12, 248, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 13, 268, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 14, 288, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 15, 308, 10, 10, 94, WC_SLIDER, SLS_HORIZONTAL | 
+                        SLS_VERTICAL | SLS_CENTER | SLS_SNAPTOINCREMENT | 
+                        SLS_BUTTONSTOP | SLS_HOMETOP | SLS_HOMELEFT | 
+                        SLS_PRIMARYSCALE1 | WS_GROUP | WS_TABSTOP | 
+                        WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", 16, 8, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 17, 28, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 18, 48, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 19, 68, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 20, 88, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 21, 108, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 22, 128, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 23, 148, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 24, 168, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 25, 188, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 26, 208, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 27, 228, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 28, 248, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 29, 268, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 30, 288, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", 31, 308, 106, 20, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_MASTER | SPBS_SERVANT | 
+                        SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        AUTOCHECKBOX    "Check", 32, 9, 128, 10, 10
+        AUTOCHECKBOX    "Check", 33, 29, 128, 10, 10
+        AUTOCHECKBOX    "Check", 34, 49, 128, 10, 10
+        AUTOCHECKBOX    "Check", 35, 69, 128, 10, 10
+        AUTOCHECKBOX    "Check", 36, 89, 128, 10, 10
+        AUTOCHECKBOX    "Check", 37, 109, 128, 10, 10
+        AUTOCHECKBOX    "Check", 38, 129, 128, 10, 10
+        AUTOCHECKBOX    "Check", 39, 149, 128, 10, 10
+        AUTOCHECKBOX    "Check", 40, 169, 128, 10, 10
+        AUTOCHECKBOX    "Check", 41, 189, 128, 10, 10
+        AUTOCHECKBOX    "Check", 42, 209, 128, 10, 10
+        AUTOCHECKBOX    "Check", 43, 229, 128, 10, 10
+        AUTOCHECKBOX    "Check", 44, 249, 128, 10, 10
+        AUTOCHECKBOX    "Check", 45, 269, 128, 10, 10
+        AUTOCHECKBOX    "Check", 46, 289, 128, 10, 10
+        AUTOCHECKBOX    "Check", 47, 309, 128, 10, 10
+        PUSHBUTTON      "I", 48, 5, 144, 16, 11
+        PUSHBUTTON      "I", 49, 25, 144, 16, 11
+        PUSHBUTTON      "I", 50, 45, 144, 16, 11
+        PUSHBUTTON      "I", 51, 65, 144, 16, 11
+        PUSHBUTTON      "I", 52, 85, 144, 16, 11
+        PUSHBUTTON      "I", 53, 105, 144, 16, 11
+        PUSHBUTTON      "I", 54, 125, 144, 16, 11
+        PUSHBUTTON      "I", 55, 145, 144, 16, 11
+        PUSHBUTTON      "I", 56, 165, 144, 16, 11
+        PUSHBUTTON      "I", 57, 185, 144, 16, 11
+        PUSHBUTTON      "I", 58, 205, 144, 16, 11
+        PUSHBUTTON      "I", 59, 225, 144, 16, 11
+        PUSHBUTTON      "I", 60, 245, 144, 16, 11
+        PUSHBUTTON      "I", 61, 265, 144, 16, 11
+        PUSHBUTTON      "I", 62, 285, 144, 16, 11
+        PUSHBUTTON      "I", 63, 305, 144, 16, 11
+    END
+END

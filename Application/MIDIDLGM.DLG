@@ -1,0 +1,346 @@
+DLGINCLUDE 1 "MIDIDLG.H"
+
+DLGTEMPLATE ID_DLG_CHANNELMAP LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Assign new MIDI Channels", ID_DLG_CHANNELMAP, 47, 4, 233, 99, 
+            WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        CONTROL         "", DID_CM_SPIN1, 27, 82, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN5, 27, 65, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN9, 27, 48, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN13, 27, 31, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN2, 82, 82, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN6, 82, 65, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN10, 82, 48, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN14, 82, 31, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN3, 137, 82, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN7, 137, 65, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN11, 137, 48, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN15, 137, 31, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN4, 192, 82, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN8, 192, 65, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN12, 192, 48, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", DID_CM_SPIN16, 192, 31, 25, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | SPBS_JUSTRIGHT | 
+                        SPBS_FASTSPIN | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "STORE", DID_OK, 57, 7, 40, 14
+        PUSHBUTTON      "CANCEL", DID_CANCEL, 103, 7, 40, 14
+        CTEXT           "1", -1, 4, 84, 20, 8, DT_VCENTER
+        CTEXT           "5", -1, 4, 67, 20, 8, DT_VCENTER
+        CTEXT           "9", -1, 4, 50, 20, 8, DT_VCENTER
+        CTEXT           "13", -1, 4, 33, 20, 8, DT_VCENTER
+        CTEXT           "2", -1, 60, 84, 20, 8, DT_VCENTER
+        CTEXT           "6", -1, 60, 67, 20, 8, DT_VCENTER
+        CTEXT           "10", -1, 60, 50, 20, 8, DT_VCENTER
+        CTEXT           "14", -1, 60, 33, 20, 8, DT_VCENTER
+        CTEXT           "3", -1, 116, 84, 20, 8, DT_VCENTER
+        CTEXT           "7", -1, 116, 67, 20, 8, DT_VCENTER
+        CTEXT           "11", -1, 116, 50, 20, 8, DT_VCENTER
+        CTEXT           "15", -1, 116, 33, 20, 8, DT_VCENTER
+        CTEXT           "4", -1, 171, 84, 20, 8, DT_VCENTER
+        CTEXT           "8", -1, 171, 67, 20, 8, DT_VCENTER
+        CTEXT           "12", -1, 171, 50, 20, 8, DT_VCENTER
+        CTEXT           "16", -1, 171, 33, 20, 8, DT_VCENTER
+        PUSHBUTTON      "Default", DID_CM_DEFAULT, 149, 7, 40, 14
+    END
+END
+
+DLGTEMPLATE ID_DLG_RECFILTER LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "RECORD FILTER Selection", ID_DLG_RECFILTER, 66, 13, 208, 108, 
+            WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        LTEXT           "Accept the following Events at RECORD:", -1, 9, 94, 
+                        189, 8
+        AUTOCHECKBOX    "NOTE ON/OFF", ID_RF_NOTE, 9, 79, 124, 10
+        AUTOCHECKBOX    "AFTERTOUCH", ID_RF_AFTERTOUCH, 9, 69, 124, 10
+        AUTOCHECKBOX    "CONTROLLER", ID_RF_CONTROLLER, 9, 59, 124, 10
+        AUTOCHECKBOX    "PATCH CHANGES", ID_RF_PATCHCHG, 9, 49, 124, 10
+        AUTOCHECKBOX    "CHANNEL AFTERTOUCH", ID_RF_CHANNELAT, 9, 39, 124, 
+                        10
+        AUTOCHECKBOX    "PITCH WHEEL", ID_RF_PITCHWHEEL, 9, 29, 124, 10
+        PUSHBUTTON      "OK", DID_OK, 9, 9, 40, 14
+        PUSHBUTTON      "CANCEL", DID_CANCEL, 61, 9, 40, 14
+    END
+END
+
+DLGTEMPLATE ID_DLG_MIXER LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Mixer-Testdialog", ID_DLG_MIXER, 12, -26, 354, 156, NOT 
+            FS_DLGBORDER | FS_BORDER | WS_VISIBLE, FCF_SYSMENU | 
+            FCF_TITLEBAR
+    BEGIN
+        CONTROL         "", -1, 17, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 37, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 57, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 77, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 97, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 117, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 137, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 157, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 177, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 197, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 217, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 237, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 257, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 277, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 297, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        CONTROL         "", -1, 317, 16, 20, 134, WC_STATIC, SS_FGNDFRAME | 
+                        WS_GROUP | WS_VISIBLE
+        PUSHBUTTON      "cancel", DID_CANCEL, 113, 2, 127, 10
+        CONTROL         901, ID_MX_LEVBMP1, 22, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         902, ID_MX_LEVBMP2, 42, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         903, ID_MX_LEVBMP3, 62, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         904, ID_MX_LEVBMP4, 82, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         905, ID_MX_LEVBMP5, 102, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         906, ID_MX_LEVBMP6, 122, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         907, ID_MX_LEVBMP7, 142, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         908, ID_MX_LEVBMP8, 162, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         909, ID_MX_LEVBMP9, 182, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         910, ID_MX_LEVBMP10, 202, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         911, ID_MX_LEVBMP11, 222, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         912, ID_MX_LEVBMP12, 242, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         913, ID_MX_LEVBMP13, 262, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         914, ID_MX_LEVBMP14, 282, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         915, ID_MX_LEVBMP15, 302, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         916, ID_MX_LEVBMP16, 322, 119, 20, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        CONTROL         "", DID_SL_LEV1, 22, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV2, 42, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV3, 62, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV4, 82, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV5, 102, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV6, 122, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV7, 142, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV8, 162, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV9, 182, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV10, 202, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV11, 222, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV12, 242, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV13, 262, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV14, 282, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV15, 302, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+        CONTROL         "", DID_SL_LEV16, 322, 31, 12, 50, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_LEFT | SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_HOMELEFT | SLS_PRIMARYSCALE1 | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 64, 0, 0, 0
+    END
+END
+
+DLGTEMPLATE ID_DLG_MAIN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Hauptdialog (PLAY/REC)", ID_DLG_MAIN, -27, 42, 412, 96, NOT 
+            FS_DLGBORDER | FS_BORDER | WS_VISIBLE, FCF_NOBYTEALIGN
+            PRESPARAMS PP_BACKGROUNDCOLOR, 0x00FFFFFFL
+            PRESPARAMS PP_DISABLEDBACKGROUNDCOLOR, 0x00FFFFFFL
+    BEGIN
+        PUSHBUTTON      "PLAY", DID_MD_PLAY, 4, 80, 40, 10
+        PUSHBUTTON      "REcord", DID_MD_RECORD, 46, 80, 40, 10
+        PUSHBUTTON      "Stop", DID_MD_STOP, 4, 68, 124, 10
+        LISTBOX         DID_MD_LISTBOX, 138, 44, 98, 47, LS_HORZSCROLL
+        PUSHBUTTON      "CLEAR", DID_MD_CLEARLIST, 191, 34, 47, 9
+        PUSHBUTTON      "Overdub", DID_MD_OVERDUB, 88, 80, 40, 10
+        AUTOCHECKBOX    "ON50", DID_MD_TST1, 354, 30, 37, 11
+        AUTOCHECKBOX    "OFF50", DID_MD_TST2, 354, 20, 40, 11
+        CONTROL         "", DID_SL_TEMPO, 250, 9, 10, 76, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_RIBBONSTRIP | SLS_HOMELEFT | SLS_PRIMARYSCALE1 | 
+                        WS_GROUP | WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 120, 0, 0, 0
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00FFFFFFL
+        LTEXT           "TMP", -1, 239, 84, 22, 10, DT_BOTTOM
+        CONTROL         "", DID_SL_FADER, 266, 9, 10, 76, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_RIBBONSTRIP | SLS_HOMELEFT | SLS_PRIMARYSCALE1 | 
+                        WS_GROUP | WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 120, 0, 0, 0
+        LTEXT           "FAD", -1, 261, 84, 23, 10, DT_BOTTOM
+        CONTROL         "", DID_SL_RELTEMP, 282, 9, 10, 76, WC_SLIDER, 
+                        SLS_HORIZONTAL | SLS_VERTICAL | SLS_CENTER | 
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSTOP | 
+                        SLS_RIBBONSTRIP | SLS_HOMELEFT | SLS_PRIMARYSCALE1 | 
+                        WS_GROUP | WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 12, 0, 120, 0, 0, 0
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_HILITEFOREGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_HILITEBACKGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_DISABLEDFOREGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_DISABLEDBACKGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_BORDERCOLOR, 0x00FFFFFFL
+        LTEXT           "RelTMP", -1, 282, 84, 31, 10, DT_BOTTOM
+        AUTORADIOBUTTON "48", DID_MD_TIME1, 317, 85, 30, 11, WS_TABSTOP
+        AUTORADIOBUTTON "72", DID_MD_TIME2, 317, 74, 30, 11, WS_TABSTOP
+        AUTORADIOBUTTON "96", DID_MD_TIME3, 317, 63, 30, 11, WS_TABSTOP
+        AUTORADIOBUTTON "120", DID_MD_TIME4, 317, 52, 30, 11, WS_TABSTOP
+        AUTORADIOBUTTON "144", DID_MD_TIME5, 317, 41, 30, 11, WS_TABSTOP
+        AUTORADIOBUTTON "168", DID_MD_TIME6, 317, 30, 30, 11, WS_TABSTOP
+        AUTORADIOBUTTON "192", DID_MD_TIME7, 317, 19, 30, 11, WS_TABSTOP
+        AUTOCHECKBOX    "Bender", DID_MD_BENDER, 345, 82, 55, 11
+        AUTOCHECKBOX    "MidiThru", DID_MD_MIDITHRU, 345, 72, 55, 11
+        AUTOCHECKBOX    "Measend", DID_MD_MEASEND, 345, 60, 55, 11
+        AUTOCHECKBOX    "Excl2Host", DID_MD_EXCL2HOST, 345, 50, 55, 11
+        PUSHBUTTON      "Change CHAN", DID_MD_UPDATECHAN, 46, 54, 82, 10
+        PUSHBUTTON      "Filter", DID_MD_RECFILTER, 4, 54, 40, 10
+        CONTROL         "", DID_SB_TIME, 13, 34, 110, 10, WC_SCROLLBAR, 
+                        SBS_HORZ | WS_VISIBLE
+        LTEXT           "Time:", DID_TXT_TIME, 15, 22, 106, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "8.courier"
+    END
+END
